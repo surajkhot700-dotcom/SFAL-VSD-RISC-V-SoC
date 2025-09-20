@@ -1,0 +1,46 @@
+The purpose of this program is to understand and follow the complete flow of designing a System-on-Chip (SoC), starting from initial specifications to the fabrication-ready physical chip. This overview captures what we will be doing in the program.
+
+
+1)Chip Modeling (O1)
+
+Start with high-level specifications of the chip’s behavior.
+
+Develop a C model and a testbench to verify functionality.
+
+Goal: Understand what the chip is supposed to do.
+
+2)RTL Architecture (O2)
+
+Convert the C model into RTL (Verilog/VHDL).
+
+Define the major blocks like processor, peripherals, and IPs.
+
+Output: RTL description ready for integration.
+
+3)SoC Integration (O3)
+
+Synthesize RTL to gate-level netlist.
+
+Combine processor, macros, analog IPs, and GPIOs to form a complete SoC.
+
+Goal: Learn how all blocks are integrated into a functional SoC.
+
+4)Physical Implementation (RTL → GDSII)
+
+Floorplan and place blocks on the chip.
+
+Connect the blocks and optimize area, timing, and power.
+
+Key point: Understand hard macros (fixed layout) vs soft logic (synthesized from RTL).
+
+Final Signoff
+
+Perform checks like DRC (Design Rule Check) and LVS (Layout vs Schematic).
+
+Output: GDSII file ready for fabrication.
+
+Manufacturing
+
+Send the GDSII file to a semiconductor fab.
+
+Learn how the chip is fabricated on silicon wafers.
